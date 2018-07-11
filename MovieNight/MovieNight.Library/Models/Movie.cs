@@ -7,14 +7,14 @@ namespace MovieNight.Library.Models
 {
     public class Movie : AModel
     {
-        public List<Person> Actors
+        public List<Actor> Actors
         {
             get;
             set;
         }
         public Movie()
         {
-            Actors = new List<Person>()
+            Actors = new List<Actor>()
             {
                 new Person()
             };
