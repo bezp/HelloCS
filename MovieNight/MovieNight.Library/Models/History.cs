@@ -7,9 +7,21 @@ namespace MovieNight.Library.Models
 {
     public class History : AModel
     {
+        public List<Movie> Movies //doesnt say that it is a list, ONLY that it can hold a list 
+            //its not a container, just says it can be a container 
+        {
+            get;
+            set;
+        }
+
         public History()
         {
-
+            //Movies = new List<Movie>(); // THIS will be the container for the property up there
+            //Movies.Add(new Movie()); //whenever a history object is created, add it to the list
+            Movies = new List<Movie>()
+            {
+                new Movie()
+            };
         }
     }
 }
