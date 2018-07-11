@@ -18,5 +18,27 @@ namespace MovieNight.Tests
             Assert.True(expected == actual.GetType());
             //Assert.True(actual.GetType() == expected);
         }
+
+
+        //list is an enumerable; collection = enumerables (things u can count)
+        [Fact]
+        public void Test_MovieActors()
+        {
+            var expected = 1;
+            var sut = new Movie();
+            var actual = sut.Actors;
+
+            Assert.True(typeof(List<Person>) == actual.GetType());
+
+        }
+        //[Fact]
+        //public void Test_Movie()
+        //{
+        //    var expected = 1;
+        //    var sut = new Movie();
+        //    var actual = sut.Actor;
+
+        //    Assert.True(expected <= actual.Count);
+        //}
     }
 }
