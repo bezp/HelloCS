@@ -28,8 +28,8 @@ namespace MovieNight.Tests
             var sut = new Movie();
             var actual = sut.Actors;
 
-            Assert.True(typeof(List<Person>) == actual.GetType());
-
+            Assert.True(typeof(List<Actor>) == actual.GetType());
+            Assert.True(expected <= actual.Count);
         }
         //[Fact]
         //public void Test_Movie()

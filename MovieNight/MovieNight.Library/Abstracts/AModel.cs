@@ -14,6 +14,9 @@ namespace MovieNight.Library.Abstracts
         public AModel()
         {
             Id = Guid.NewGuid();
+
         }
+
+
     }
 }

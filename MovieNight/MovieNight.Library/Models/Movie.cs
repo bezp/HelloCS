@@ -7,18 +7,20 @@ namespace MovieNight.Library.Models
 {
     public class Movie : AModel
     {
+        public Movie()
+        {
+            Actors = new List<Actor>()
+            {
+                new Actor()
+            };
+
+        }
+
         public List<Actor> Actors
         {
             get;
             set;
         }
-        public Movie()
-        {
-            Actors = new List<Actor>()
-            {
-                new Person()
-            };
 
-        }
     }
 }
