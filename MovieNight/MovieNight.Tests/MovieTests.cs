@@ -62,7 +62,7 @@ namespace MovieNight.Tests
         {
             var expected = typeof(EGenre);
             Assert.True(expected == sut.Genre.GetType());
-            Assert.NotNull(sut.Genre);
+            Assert.NotEqual(EGenre.None, sut.Genre); 
         }
 
 

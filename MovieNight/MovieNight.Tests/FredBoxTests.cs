@@ -48,7 +48,8 @@ namespace MovieNight.Tests
             //var actuak = sut.GetMovies();  just put it in next line w/o actuak
 
             //Assert.True(expected.Count() < sut.GetMovies().Count()); //expected is a reference
-            Assert.True(expected < sut.GetMovies().Count()); //expected is an actual value
+            Assert.True(expected < sut.GetMovies().Count()); //expected is an actual value now
+
             //what are we trying to do? 
         }
 
