@@ -52,6 +52,9 @@ namespace MovieNight.Tests
         {
             var expected = typeof(string);
             Assert.True(expected == sut.Title.GetType());
+
+            //after lunch
+            Assert.NotEmpty(sut.Title);
         }
 
         [Fact]
@@ -59,6 +62,9 @@ namespace MovieNight.Tests
         {
             var expected = typeof(EGenre);
             Assert.True(expected == sut.Genre.GetType());
+            Assert.NotNull(sut.Genre);
         }
+
+
     }
 }

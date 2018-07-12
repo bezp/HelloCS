@@ -33,6 +33,9 @@ namespace MovieNight.Library.Models
                 new Actor()
             };
             Title = string.Empty; // w/o this the Test_MovieTitle sut will be null
+            Genre = EGenre.Romantic_Western;
         }
+
+
     }
 }

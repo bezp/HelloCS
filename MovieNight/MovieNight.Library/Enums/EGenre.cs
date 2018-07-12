@@ -9,8 +9,8 @@ namespace MovieNight.Library.Enums
         Action,
         Anime,
         Comedy,
+        Romantic_Western,
         Space_Western,
-        Spaghetti_Western,
         Western
     }
 }
