@@ -26,6 +26,16 @@ namespace MovieNight.Tests
         }
 
         [Fact]
+        public void Test_FredBoxMakeMovie_Negative()
+        {
+            string title = null;
+            //string expected = null;
+            var actual = sut.MakeMovie(title);
+
+            Assert.NotNull(actual.Title);
+        }
+
+        [Fact]
         public void Test_FredBoxGetMovies()
         {
             var expected = 0;
